@@ -1,0 +1,23 @@
+##############################################
+# PrevInstance application by Sergio del Rio #
+# April 16th, 2005                           #
+#############################################
+
+This program checks for a previous instance of
+the application. No matter where the exe is 
+located, it detects it. It is not like the 
+App.PrevInstance property.
+
+It works by creating a "STATIC" window with a 
+specific code as the caption.
+
+If the function finds the window containing 
+the code, then there is another instance 
+running.
+
+You can change the InstanceCode for any string
+you want.
+
+You don't need to call DestroyWindow API, since 
+the window self destroys when the program is 
+closed.
